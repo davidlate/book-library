@@ -1,10 +1,5 @@
 let myLibrary = [];
 
-function Book(){
+function Book() {}
 
-}
-
-
-function addBookToLibrary(){
-
-}
+function addBookToLibrary() {}
