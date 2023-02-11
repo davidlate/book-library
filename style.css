@@ -32,6 +32,7 @@
     margin: auto;
     grid-template-columns: 1fr;
     border: 1px solid grey;
+    margin-right: 15px;
 }
 
 
