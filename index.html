@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 
     <title>Dave's Library</title>
   </head>
   <body>
 
-    <div class="header"></div>
+    <div class="header">
+      <h1><a href="https://davidjohnearley.com" target="_blank" rel="noopener noreferrer">DAVID EARLEY</a></h1>
+      <p><em>This served as a brief practice in using constructors</em></p>
+    </div>
     <section class="main">
       <div class="left">
 
@@ -23,29 +26,43 @@
           <input type="text" id="author" name="author" placeholder="Charles Dickens...">
 
           <label for="year_published">Publish Date</label>
-          <input type="number" id="year_published" name="year_published" placeholder="1863...">
+          <input type="number" id="year" name="year" placeholder="1863...">
 
           <label for="description">Description</label>
           <input type="text" id="description" name="description" placeholder="A tale of two...">
+
+          <label for="read">Read?</label>
+          <input type="checkbox" id="read" name="read">
           <br>
         <button type="button" id="add_text">Add Book</button>
         </form>
       </div>
       <div class="right">
-        <h4>Book List</h4>
-        <ul class="list">
-          <li class='book'>
-            <div class="item">Title</div>
-            <div class="item">Author</div>
-            <div class="item">Year</div>
-            <div class="item">Desc</div>
-            <label for="read">Read?
-            <input type="checkbox" name="read" id="read"></label>
-            <button id="remove">Remove</button>
-          </li>
+        <h4>Library</h4>
+        <ul class="list" id="list">
+            <!-- <div class="item">Title</div>
+            <div class="item item-author">Author</div>
+            <div class="item item-year">Year</div>
+            <div class="item item">Desc</div>
+            <div class='item item-check'>
+              <label for="read">Read?</label>
+              <input type="checkbox" name="read" class="read">
+            </div>
+            <div class="btn"><button id="remove">Remove</button></div>
 
+            <div class="item">Title</div>
+            <div class="item item-author">Author</div>
+            <div class="item item-year">Year</div>
+            <div class="item item">Desc</div>
+            <div class="item-check">
+              <label for="read">Read?</label>
+              <input type="checkbox" name="read" class="read">
+            </div>
+            <div class="btn"><button class="remove">Remove</button></div>
+               -->
         </ul>
         </div>
     </section>
   </body>
+
 </html>
